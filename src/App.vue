@@ -1,26 +1,59 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <router-view />
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Login from "./views/Login";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
-  }
-}
+    Login,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+body {
+  padding: 0px;
+  margin: 0px;
+  background-color: #e5e5e5;
+}
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 400;
   text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+  white-space: nowrap;
+  vertical-align: middle;
+  -webkit-user-select: none;
+  user-select: none;
+  border: 1px solid transparent;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  border-radius: 0.25rem;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+.btn-block {
+  display: block;
+  width: 100%;
+}
+.form-control {
+  box-sizing: border-box;
+  display: block;
+  height: 35px;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0.375rem 0.75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 </style>
